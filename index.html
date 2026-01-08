@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор множителя здоровья боссов в Terraria (Expert/Master Mode)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            font-size: 18px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .info {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Калькулятор множителя здоровья боссов в Terraria</h1>
+    <p>Для Expert или Master Mode. Введите количество игроков (1–255).</p>
+    
+    <label for="players">Количество игроков:</label>
+    <input type="number" id="players" min="1" max="255" value="1">
+    
+    <br>
+    <button onclick="calculate()">Рассчитать</button>
+    
+    <div id="result"></div>
+    
+    <div class="info">
+        <p>Примеры:</p>
+        <ul>
+            <li>1 игрок: ×1</li>
+            <li>2 игрока: ×1.35</li>
+            <li>3 игрока: ×1.917</li>
+            <li>4 игрока: ×2.628</li>
+            <li>10 игроков: ×8.067</li>
+            <li>255 игроков: ×171.37</li>
+        </ul>
+    </div>
+
+    <script>
+        function calculate() {
+            let players = parseInt(document.getElementById("players").value);
+            if (isNaN(players) || players < 1 || players > 255) {
+                document.getElementById("result").innerHTML = "Введите число от 1 до 255!";
+                return;
+            }
+            
+            let multiplier;
+            
+            if (players === 1) {
+                multiplier = 1.0;
+            } else if (players === 2) {
+                multiplier = 1.35;
+            } else {
+                // Начинаем с previous_boost = 0.35 (для 2 игроков)
+                let current_boost = 0.35;
+                let total = 1 + current_boost; // 1 (база) + boost для 2
+                
+                for (let p = 3; p <= players; p++) {
+                    let new_boost = current_boost + (1 - current_boost) / 3;
+                    total += new_boost;
+                    current_boost = new_boost;
+                }
+                
+                let unmodified = total;
+                
+                if (players >= 10) {
+                    multiplier = (unmodified * 2 + 8) / 3;
+                } else {
+                    multiplier = unmodified;
+                }
+            }
+            
+            document.getElementById("result").innerHTML = 
+                `Множитель здоровья босса: <span style="color:#007bff;">×${multiplier.toFixed(4)}</span><br><br>` +
+                `Здоровье босса увеличено на ${(multiplier * 100 - 100).toFixed(2)}%`;
+        }
+        
+        // Рассчитать при загрузке страницы (для значения по умолчанию)
+        window.onload = calculate;
+    </script>
+</body>
+</html>
