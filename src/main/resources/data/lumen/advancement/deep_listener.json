@@ -1,0 +1,29 @@
+{
+  "parent": "lumen:first_pulse",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.lumen.deep_listener.title"
+    },
+    "description": {
+      "translate": "advancement.lumen.deep_listener.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "deep_listener": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "deep_listener"
+    ]
+  ]
+}
