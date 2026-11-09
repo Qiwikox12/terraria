@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SES",
+    "NCN",
+    " N "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "C": {
+      "item": "overkill:overkill_core"
+    }
+  },
+  "result": {
+    "id": "overkill:gravity_gauntlet",
+    "count": 1
+  }
+}

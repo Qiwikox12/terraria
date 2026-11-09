@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:orbital_designator"
+    },
+    "title": {
+      "translate": "advancements.overkill.orbital_designator.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.orbital_designator.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overkill:orbital_designator"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "overkill:root"
+}

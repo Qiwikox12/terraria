@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " O ",
+    "PCP",
+    " O "
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "P": {
+      "item": "minecraft:ender_pearl"
+    },
+    "C": {
+      "item": "overkill:overkill_core"
+    }
+  },
+  "result": {
+    "id": "overkill:singularity",
+    "count": 4
+  }
+}
