@@ -1,0 +1,29 @@
+{
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.resonance.guide.description"
+    },
+    "icon": {
+      "id": "resonance:field_guide"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.resonance.guide.title"
+    }
+  },
+  "parent": "resonance:root",
+  "criteria": {
+    "craft_guide": {
+      "conditions": {
+        "recipe": "resonance:field_guide"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "requirements": [
+    [
+      "craft_guide"
+    ]
+  ]
+}

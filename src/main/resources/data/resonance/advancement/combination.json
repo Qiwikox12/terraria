@@ -1,0 +1,30 @@
+{
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.resonance.combination.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "id": "resonance:gauntlet"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.resonance.combination.title"
+    }
+  },
+  "parent": "resonance:gauntlet",
+  "criteria": {
+    "detonate": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "detonate"
+    ]
+  ],
+  "rewards": {
+    "experience": 75
+  }
+}

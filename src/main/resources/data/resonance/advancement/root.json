@@ -1,0 +1,33 @@
+{
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/deepslate.png",
+    "description": {
+      "translate": "advancements.resonance.root.description"
+    },
+    "icon": {
+      "id": "minecraft:amethyst_shard"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.resonance.root.title"
+    }
+  },
+  "criteria": {
+    "discover_amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:amethyst_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "discover_amethyst"
+    ]
+  ]
+}

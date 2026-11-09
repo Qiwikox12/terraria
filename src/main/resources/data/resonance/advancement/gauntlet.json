@@ -1,0 +1,29 @@
+{
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.resonance.gauntlet.description"
+    },
+    "icon": {
+      "id": "resonance:gauntlet"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.resonance.gauntlet.title"
+    }
+  },
+  "parent": "resonance:core",
+  "criteria": {
+    "craft_gauntlet": {
+      "conditions": {
+        "recipe": "resonance:gauntlet"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "requirements": [
+    [
+      "craft_gauntlet"
+    ]
+  ]
+}
