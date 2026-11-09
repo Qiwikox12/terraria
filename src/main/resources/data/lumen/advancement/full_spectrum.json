@@ -1,0 +1,29 @@
+{
+  "parent": "lumen:first_pulse",
+  "display": {
+    "icon": {
+      "id": "minecraft:echo_shard",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.lumen.full_spectrum.title"
+    },
+    "description": {
+      "translate": "advancement.lumen.full_spectrum.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "full_spectrum": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "full_spectrum"
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "minecraft:barrel",
+    "minecraft:ender_chest",
+    "minecraft:spawner",
+    "minecraft:trial_spawner",
+    "minecraft:vault",
+    "minecraft:decorated_pot",
+    "minecraft:suspicious_sand",
+    "minecraft:suspicious_gravel"
+  ]
+}
