@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "eventhorizon",
+  "version": "${version}",
+  "name": "Event Horizon",
+  "description": "Bend gravity. Chain abilities. Collapse the battlefield — not your world.",
+  "authors": ["Event Horizon contributors"],
+  "license": "MIT",
+  "icon": "assets/eventhorizon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.eventhorizon.EventHorizon"],
+    "client": ["dev.eventhorizon.client.EventHorizonClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.116.18+1.21.1"
+  }
+}
