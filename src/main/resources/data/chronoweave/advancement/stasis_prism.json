@@ -1,0 +1,36 @@
+{
+  "parent": "chronoweave:refined_crystal",
+  "criteria": {
+    "has_prism": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:stasis_prism"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.chronoweave.stasis_prism.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chronoweave:stasis_prism"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.chronoweave.stasis_prism.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_prism"
+    ]
+  ]
+}

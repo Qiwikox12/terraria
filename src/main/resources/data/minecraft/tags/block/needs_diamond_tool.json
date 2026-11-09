@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "chronoweave:chronon_singularity_core",
+    "chronoweave:chrono_anchor"
+  ]
+}

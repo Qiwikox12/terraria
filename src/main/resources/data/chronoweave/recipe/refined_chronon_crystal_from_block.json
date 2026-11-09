@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chronoweave:resonant_chronon_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "chronoweave:refined_chronon_crystal"
+  }
+}

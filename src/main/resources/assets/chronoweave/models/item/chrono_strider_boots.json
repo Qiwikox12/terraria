@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chronoweave:item/chrono_strider_boots"
+  }
+}

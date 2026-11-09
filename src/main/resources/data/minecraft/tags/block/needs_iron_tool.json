@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "chronoweave:chronon_ore",
+    "chronoweave:deepslate_chronon_ore",
+    "chronoweave:resonant_chronon_block",
+    "chronoweave:temporal_accelerator"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "chronoweave:raw_chronon_shard"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GCG",
+    "GGG"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chronoweave:phase_glass"
+  }
+}

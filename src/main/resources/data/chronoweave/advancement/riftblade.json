@@ -1,0 +1,36 @@
+{
+  "parent": "chronoweave:singularity_core",
+  "criteria": {
+    "has_riftblade": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:riftblade"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.chronoweave.riftblade.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chronoweave:riftblade"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.chronoweave.riftblade.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_riftblade"
+    ]
+  ]
+}

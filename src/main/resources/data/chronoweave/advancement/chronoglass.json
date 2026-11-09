@@ -1,0 +1,36 @@
+{
+  "parent": "chronoweave:singularity_core",
+  "criteria": {
+    "has_chronoglass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:chronoglass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.chronoweave.chronoglass.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chronoweave:chronoglass"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.chronoweave.chronoglass.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_chronoglass"
+    ]
+  ]
+}

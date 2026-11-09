@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "chronoweave:refined_chronon_crystal"
+    },
+    "B": {
+      "item": "minecraft:diamond_boots"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "CFC",
+    "CBC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:chrono_strider_boots"
+  }
+}
