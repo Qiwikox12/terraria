@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:raw_chronon_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "chronoweave:textures/block/resonant_chronon_block.png",
+    "description": {
+      "translate": "advancements.chronoweave.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chronoweave:raw_chronon_shard"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.chronoweave.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_shard"
+    ]
+  ]
+}

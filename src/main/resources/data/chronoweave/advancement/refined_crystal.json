@@ -1,0 +1,36 @@
+{
+  "parent": "chronoweave:root",
+  "criteria": {
+    "has_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:refined_chronon_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.chronoweave.refined_crystal.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chronoweave:refined_chronon_crystal"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.chronoweave.refined_crystal.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_crystal"
+    ]
+  ]
+}
