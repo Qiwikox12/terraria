@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:orbital_designator"
+    },
+    "title": {
+      "translate": "advancements.overkill.orbital_massacre.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.orbital_massacre.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "overkill:orbital_designator"
+}

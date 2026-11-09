@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:earth_devourer"
+    },
+    "title": {
+      "translate": "advancements.overkill.excavator.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.excavator.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "overkill:earth_devourer"
+}

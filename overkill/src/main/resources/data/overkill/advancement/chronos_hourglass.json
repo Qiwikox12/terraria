@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:chronos_hourglass"
+    },
+    "title": {
+      "translate": "advancements.overkill.chronos_hourglass.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.chronos_hourglass.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overkill:chronos_hourglass"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "overkill:root"
+}

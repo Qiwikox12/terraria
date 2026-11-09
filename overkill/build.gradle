@@ -1,0 +1,67 @@
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+}
+
+base {
+	archivesName = 'overkill'
+}
+
+sourceSets {
+	gametest {
+		compileClasspath += sourceSets.main.compileClasspath + sourceSets.main.output
+		runtimeClasspath += sourceSets.main.runtimeClasspath + sourceSets.main.output
+	}
+}
+
+loom {
+	splitEnvironmentSourceSets()
+	accessWidenerPath = file("src/main/resources/overkill.accesswidener")
+
+	mods {
+		"overkill" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+		"overkill-gametest" {
+			sourceSet sourceSets.gametest
+		}
+	}
+
+	runs {
+		// Headless server that runs every @GameTest and exits non-zero on failure: ./gradlew runGametest
+		gametest {
+			server()
+			name "Game Test"
+			vmArg "-Dfabric-api.gametest"
+			vmArg "-Dfabric-api.gametest.report-file=${project.layout.buildDirectory.get().asFile}/gametest/junit.xml"
+			runDir "build/gametest"
+			source sourceSets.gametest
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
+	it.options.encoding = 'UTF-8'
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}

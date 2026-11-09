@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " C ",
+    "ESE",
+    " B "
+  ],
+  "key": {
+    "C": {
+      "item": "overkill:overkill_core"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "S": {
+      "item": "minecraft:netherite_sword"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "result": {
+    "id": "overkill:void_reaver",
+    "count": 1
+  }
+}

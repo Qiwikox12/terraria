@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:gravity_gauntlet"
+    },
+    "title": {
+      "translate": "advancements.overkill.gravity_gauntlet.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.gravity_gauntlet.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overkill:gravity_gauntlet"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "overkill:root"
+}
