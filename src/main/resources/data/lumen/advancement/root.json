@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.lumen.root.title"
+    },
+    "description": {
+      "translate": "advancement.lumen.root.description"
+    },
+    "frame": "task",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "obtained_resonator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "lumen:resonator"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtained_resonator"
+    ]
+  ]
+}
