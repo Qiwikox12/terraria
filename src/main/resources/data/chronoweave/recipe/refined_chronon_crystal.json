@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "chronoweave:raw_chronon_shard"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    " A ",
+    "CGC",
+    " A "
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:refined_chronon_crystal"
+  }
+}

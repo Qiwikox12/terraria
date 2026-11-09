@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_block"
+    },
+    "K": {
+      "item": "minecraft:clock"
+    },
+    "R": {
+      "item": "chronoweave:refined_chronon_crystal"
+    },
+    "O": {
+      "item": "minecraft:observer"
+    }
+  },
+  "pattern": [
+    "CRC",
+    "RKR",
+    "COC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:temporal_accelerator"
+  }
+}

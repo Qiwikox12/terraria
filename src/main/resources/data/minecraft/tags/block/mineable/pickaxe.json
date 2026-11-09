@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "chronoweave:chronon_ore",
+    "chronoweave:deepslate_chronon_ore",
+    "chronoweave:resonant_chronon_block",
+    "chronoweave:phase_glass",
+    "chronoweave:chronon_singularity_core",
+    "chronoweave:temporal_accelerator",
+    "chronoweave:chrono_anchor"
+  ]
+}

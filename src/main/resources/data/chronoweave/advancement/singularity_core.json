@@ -1,0 +1,36 @@
+{
+  "parent": "chronoweave:refined_crystal",
+  "criteria": {
+    "has_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:chronon_singularity_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.chronoweave.singularity_core.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chronoweave:chronon_singularity_core"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.chronoweave.singularity_core.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_core"
+    ]
+  ]
+}

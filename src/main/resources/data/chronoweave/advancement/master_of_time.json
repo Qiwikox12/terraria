@@ -1,0 +1,88 @@
+{
+  "parent": "chronoweave:chronoglass",
+  "criteria": {
+    "chronoglass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:chronoglass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "riftblade": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:riftblade"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "astrolabe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:wormhole_astrolabe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "manipulator": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:entropy_manipulator"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chronoweave:chrono_strider_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.chronoweave.master_of_time.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chronoweave:wormhole_astrolabe"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.chronoweave.master_of_time.title"
+    }
+  },
+  "requirements": [
+    [
+      "chronoglass"
+    ],
+    [
+      "riftblade"
+    ],
+    [
+      "astrolabe"
+    ],
+    [
+      "manipulator"
+    ],
+    [
+      "boots"
+    ]
+  ]
+}
