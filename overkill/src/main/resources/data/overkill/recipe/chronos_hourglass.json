@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "GKG",
+    "ACA",
+    "GKG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "K": {
+      "item": "minecraft:clock"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "overkill:overkill_core"
+    }
+  },
+  "result": {
+    "id": "overkill:chronos_hourglass",
+    "count": 1
+  }
+}
