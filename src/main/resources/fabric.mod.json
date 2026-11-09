@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "lumen",
+  "version": "${version}",
+  "name": "LUMEN — Resonance Scanner",
+  "description": "A survival-friendly resonance scanner with tactile pulses, three scan modes, deep scans, and restrained diegetic visuals.",
+  "authors": ["LUMEN contributors"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/lumen/icon.png",
+  "environment": "*",
+  "accessWidener": "lumen.accesswidener",
+  "entrypoints": {
+    "main": ["dev.lumen.Lumen"],
+    "client": ["dev.lumen.client.LumenClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
