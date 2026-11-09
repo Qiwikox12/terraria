@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "chronoweave",
+  "version": "${version}",
+  "name": "ChronoWeave: Temporal & Spatial Mastery",
+  "description": "High-craft temporal & spatial manipulation mod: rewind personal history, freeze projectile domes, forge Paradox Echo blades, encapsulate entities in Stasis Prisms, reverse block entropy, and harness Chronon Singularity Cores.",
+  "authors": [
+    "ChronoWeave Studio"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/chronoweave/chronoweave"
+  },
+  "license": "MIT",
+  "icon": "assets/chronoweave/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.chronoweave.ChronoWeaveMod"
+    ],
+    "client": [
+      "dev.chronoweave.client.ChronoWeaveClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
