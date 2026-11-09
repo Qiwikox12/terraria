@@ -1,0 +1,40 @@
+{
+  "parent": "eventhorizon:root",
+  "display": {
+    "icon": {
+      "id": "eventhorizon:gravity_gauntlet"
+    },
+    "title": {
+      "translate": "advancement.eventhorizon.gauntlet.title"
+    },
+    "description": {
+      "translate": "advancement.eventhorizon.gauntlet.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bind_core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "eventhorizon:gravity_core"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bind_core"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eventhorizon:gravity_gauntlet"
+    ]
+  }
+}
