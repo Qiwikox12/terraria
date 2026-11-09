@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "overkill",
+  "version": "${version}",
+  "name": "OVERKILL",
+  "description": "Seven absolutely unreasonable endgame artifacts: a void greatsword, an orbital strike remote, a time-stopping hourglass, a black hole grenade, a gravity gauntlet, a 9x9x9 world-eating pickaxe and a ring that refuses to let you die.",
+  "authors": ["Overkill Team"],
+  "license": "MIT",
+  "icon": "assets/overkill/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.overkill.OverkillMod"],
+    "client": ["dev.overkill.client.OverkillClient"]
+  },
+  "accessWidener": "overkill.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
