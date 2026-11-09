@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "eventhorizon_test",
+  "version": "1.0.0",
+  "name": "Event Horizon GameTests",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-gametest": ["dev.eventhorizon.gametest.GravityGameTests"]
+  },
+  "depends": { "eventhorizon": "*", "fabric-gametest-api-v1": "*" }
+}
