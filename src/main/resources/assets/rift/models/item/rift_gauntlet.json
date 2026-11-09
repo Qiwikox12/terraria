@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": { "layer0": "rift:item/rift_gauntlet" },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [0, -75, 20],
+      "translation": [1.2, 0.8, -0.5],
+      "scale": [1.1, 1.1, 1.1]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 75, -20],
+      "translation": [1.2, 0.8, -0.5],
+      "scale": [1.1, 1.1, 1.1]
+    }
+  }
+}
