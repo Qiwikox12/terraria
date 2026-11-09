@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "resonance",
+  "version": "${version}",
+  "name": "Resonance",
+  "description": "Bend gravity. Gather a crowd, detonate a singularity, and step through the impossible. No bosses. No broken terrain.",
+  "authors": ["Resonance contributors"],
+  "license": "MIT",
+  "icon": "assets/resonance/textures/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.resonance.Resonance"],
+    "client": ["dev.resonance.client.ResonanceClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.116.7+1.21.1"
+  }
+}

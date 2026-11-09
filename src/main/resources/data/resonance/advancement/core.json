@@ -1,0 +1,29 @@
+{
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.resonance.core.description"
+    },
+    "icon": {
+      "id": "resonance:resonance_core"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.resonance.core.title"
+    }
+  },
+  "parent": "resonance:root",
+  "criteria": {
+    "craft_core": {
+      "conditions": {
+        "recipe": "resonance:resonance_core"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "requirements": [
+    [
+      "craft_core"
+    ]
+  ]
+}
