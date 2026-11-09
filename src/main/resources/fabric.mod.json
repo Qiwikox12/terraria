@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "rift",
+  "version": "${version}",
+  "name": "RIFT · Разлом",
+  "description": "Turn gravity into a weapon. Capture, launch, surge and collapse a singularity — without destroying your world.",
+  "authors": ["RIFT contributors"],
+  "license": "MIT",
+  "icon": "assets/rift/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.rift.RiftMod"],
+    "client": ["dev.rift.client.RiftClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.116.0+1.21.1"
+  }
+}
