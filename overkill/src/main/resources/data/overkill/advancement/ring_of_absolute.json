@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:ring_of_absolute"
+    },
+    "title": {
+      "translate": "advancements.overkill.ring_of_absolute.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.ring_of_absolute.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overkill:ring_of_absolute"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "overkill:root"
+}

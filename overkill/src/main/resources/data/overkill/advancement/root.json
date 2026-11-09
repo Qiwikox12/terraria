@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:overkill_core"
+    },
+    "title": {
+      "translate": "advancements.overkill.root.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/block/crying_obsidian.png"
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overkill:overkill_core"
+          }
+        ]
+      }
+    }
+  }
+}

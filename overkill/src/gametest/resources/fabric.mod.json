@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "overkill-gametest",
+  "version": "1.0.0",
+  "name": "OVERKILL GameTests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": ["dev.overkill.test.OverkillGameTests"]
+  },
+  "depends": {
+    "overkill": "*",
+    "fabric-gametest-api-v1": "*"
+  }
+}

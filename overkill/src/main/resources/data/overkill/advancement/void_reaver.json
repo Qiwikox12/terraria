@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:void_reaver"
+    },
+    "title": {
+      "translate": "advancements.overkill.void_reaver.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.void_reaver.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overkill:void_reaver"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "overkill:root"
+}

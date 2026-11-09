@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:gravity_gauntlet"
+    },
+    "title": {
+      "translate": "advancements.overkill.yeet.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.yeet.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "overkill:gravity_gauntlet"
+}
