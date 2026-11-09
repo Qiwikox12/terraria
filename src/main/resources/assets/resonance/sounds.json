@@ -1,0 +1,42 @@
+{
+  "well": {
+    "subtitle": "subtitles.resonance.well",
+    "sounds": [
+      {
+        "name": "resonance:well",
+        "volume": 0.76,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "pulse": {
+    "subtitle": "subtitles.resonance.pulse",
+    "sounds": [
+      {
+        "name": "resonance:pulse",
+        "volume": 0.78,
+        "attenuation_distance": 18
+      }
+    ]
+  },
+  "step": {
+    "subtitle": "subtitles.resonance.step",
+    "sounds": [
+      {
+        "name": "resonance:step",
+        "volume": 0.64,
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "switch": {
+    "subtitle": "subtitles.resonance.switch",
+    "sounds": [
+      {
+        "name": "resonance:switch",
+        "volume": 0.52,
+        "attenuation_distance": 10
+      }
+    ]
+  }
+}
