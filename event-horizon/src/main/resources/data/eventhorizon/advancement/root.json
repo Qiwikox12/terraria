@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard"
+    },
+    "title": {
+      "translate": "advancement.eventhorizon.root.title"
+    },
+    "description": {
+      "translate": "advancement.eventhorizon.root.description"
+    },
+    "frame": "task",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "find_amethyst": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:amethyst_shard"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "find_amethyst"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eventhorizon:gravity_core"
+    ]
+  }
+}
