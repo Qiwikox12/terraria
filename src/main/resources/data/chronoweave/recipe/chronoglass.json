@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "chronoweave:phase_glass"
+    },
+    "C": {
+      "item": "chronoweave:refined_chronon_crystal"
+    },
+    "K": {
+      "item": "minecraft:clock"
+    }
+  },
+  "pattern": [
+    "GCG",
+    "PKP",
+    "GCG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:chronoglass"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "chronoweave:phase_glass"
+    },
+    "C": {
+      "item": "chronoweave:refined_chronon_crystal"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "pattern": [
+    "PCP",
+    "CEC",
+    "PCP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:stasis_prism"
+  }
+}

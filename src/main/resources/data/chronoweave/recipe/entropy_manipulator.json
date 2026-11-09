@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "chronoweave:refined_chronon_crystal"
+    },
+    "K": {
+      "item": "minecraft:clock"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    " CK",
+    " BC",
+    "B  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:entropy_manipulator"
+  }
+}
