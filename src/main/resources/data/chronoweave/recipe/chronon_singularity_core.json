@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "R": {
+      "item": "chronoweave:resonant_chronon_block"
+    },
+    "C": {
+      "item": "chronoweave:refined_chronon_crystal"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "pattern": [
+    "OCO",
+    "CEC",
+    "ORO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:chronon_singularity_core"
+  }
+}

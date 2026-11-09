@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "R": {
+      "item": "chronoweave:refined_chronon_crystal"
+    },
+    "B": {
+      "item": "chronoweave:resonant_chronon_block"
+    }
+  },
+  "pattern": [
+    "ROR",
+    "OBO",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chronoweave:chrono_anchor"
+  }
+}
