@@ -1,0 +1,35 @@
+name: Event Horizon
+
+on:
+  push:
+    paths: ['event-horizon/**', '.github/workflows/event-horizon.yml']
+  pull_request:
+    paths: ['event-horizon/**', '.github/workflows/event-horizon.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: event-horizon
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Build, unit tests, Minecraft GameTests
+        run: ./gradlew --no-daemon build runGametest
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: event-horizon-build
+          path: |
+            event-horizon/build/libs/*.jar
+            event-horizon/build/reports/tests/
+            event-horizon/build/reports/gametest.xml
