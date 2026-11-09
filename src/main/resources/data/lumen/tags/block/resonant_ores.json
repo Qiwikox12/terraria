@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:ores",
+      "required": false
+    },
+    "minecraft:ancient_debris",
+    "minecraft:budding_amethyst",
+    "minecraft:amethyst_cluster"
+  ]
+}
