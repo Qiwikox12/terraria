@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "id": "rift_test",
+  "version": "1.0.0",
+  "name": "Rift integration tests",
+  "environment": "*",
+  "entrypoints": { "fabric-gametest": ["dev.rift.RiftGameTests"] }
+}
