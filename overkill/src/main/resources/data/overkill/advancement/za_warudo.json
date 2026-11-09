@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "overkill:chronos_hourglass"
+    },
+    "title": {
+      "translate": "advancements.overkill.za_warudo.title"
+    },
+    "description": {
+      "translate": "advancements.overkill.za_warudo.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "code": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "overkill:chronos_hourglass"
+}
